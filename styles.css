@@ -1,0 +1,73 @@
+body{
+    background-color:black
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#header{
+    font-family:monospace;
+    color:white;
+    font-size:30px;
+    text-align: center;
+    background-image:linear-gradient(black, purple);
+}
+.subtitle{
+    font-style: italic;
+    color:white;
+}
+
+.section{
+    font-size:50px;
+    font-family: Impact;
+    color:blueviolet
+    
+}
+
+.buy_button{
+    box-shadow: black 10px 5px 5px ;   
+	background-color:green;
+    padding:0.3em;
+	font-size: 1.25em;
+    float:right
+}
+.shoe_img{
+    max-width:100%;
+    max-height:50%;
+    transition:all 1s ease-in-out;
+}
+.shoe_img:hover{
+    transform: rotateY(150deg);
+    
+
+}
+
+.column{
+    float:left;
+    width:25%;
+    padding:20px;
+    border-radius:10%;
+    background-color:white;
+    font-family: 'Gill Sans';
+    outline: purple solid 3px;
+}
+
+.row:after{
+    content:"";
+    display:grid;
+    grid-column: span 2;
+    clear:both;
+    background-color:white
+}
+
+.copyright{
+    text-align: center;
+    color:white;
+}
+
+@media only screen and (min-width : 100px) and (max-width:730px) {
+    .column {
+        width: 100%;
+    }
+}
